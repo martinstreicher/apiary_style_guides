@@ -19,6 +19,11 @@ and a set of validation rules is an enforceable style guide. If you're using the
 Interactive Editor, non-conforming elements are immediately flagged as an issue. Some heinous
 errors may even prevent saving and committing changes to the spec.
 
+## Style Guide
+
+[What makes an API Compliant](https://docs.google.com/document/d/1YB3MDOd6Rc8L_ub-UAXD1BU7uwvLjTTGV4EE2RHCflg/edit)
+
+
 ## References
 
 [Apiary Style Guides](https://help.apiary.io/tools/style-guide/)
