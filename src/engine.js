@@ -1,12 +1,19 @@
 import { query } from 'refract-query';
 
-let engine = { 
+let Engine = { 
   validate(doc) { 
-    result = doc.
+    doc.
       then(elements => { 
-        return 5;
+        let results = query(elements, { element: 'httpResponse' });
+        console.log(results);
       });
-
-    Promise.resolve(result, status => { return status; });
   }
 }
+
+let validator = function newEngine() { 
+  return({
+    ...Engine
+  })
+}
+
+export default validator;

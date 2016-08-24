@@ -13,7 +13,7 @@ var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ApibSender = {
-  send: function send(text_file_promise) {
+  parse: function parse(text_file_promise) {
     return text_file_promise.then(function (text) {
       return (0, _isomorphicFetch2.default)('https://api.apiblueprint.org/parser', {
         body: text,

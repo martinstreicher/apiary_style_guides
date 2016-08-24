@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch';
 
 let ApibSender = {
-  send(text_file_promise) { 
+  parse(text_file_promise) { 
     return text_file_promise
       .then(text => {
         return fetch('https://api.apiblueprint.org/parser', {

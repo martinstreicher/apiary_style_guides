@@ -1,6 +1,7 @@
 import { polyfill } from 'es6-promise';
 import http_getter from './http_getter';
 import apib_parser from './apib_parser';
+import validator   from './engine';
 
 // Initialize
 polyfill();
@@ -8,8 +9,9 @@ polyfill();
 var file   = "https://raw.githubusercontent.com/martinstreicher/session_service/master/apiary.apib";
 var getter = http_getter();
 var parser = apib_parser();
-var apib   = getter.retrieve(file); 
-var parsed = parser.send(apib)
+var engine = validator();
 
-parsed
-  .then(json => console.log(json));
+var apib   = getter.retrieve(file); 
+var parsed = parser.parse(apib)
+
+engine.validate(parsed);
