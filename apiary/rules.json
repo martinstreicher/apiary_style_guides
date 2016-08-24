@@ -1,0 +1,70 @@
+[
+  {
+    "ruleName": "preventAllCapsIDRequestBodies",
+    "functionName": "preventAllCapsIdInJson",
+    "target": "Request_Body",
+    "intent": "Ensure IDs in request bodies are lowercase for consistency."
+  },
+  {
+    "ruleName": "preventAllCapsIDResponseBodies",
+    "functionName": "preventAllCapsIdInJson",
+    "target": "Response_Body",
+    "intent": "Ensure IDs in response bodies are lowercase for consistency."
+  },
+  {
+    "ruleName": "validateProperActionStatusCodes",
+    "functionName": "validateProperActionStatusCode",
+    "target": "Action",
+    "intent": "Confirm correct combination of HTTP verb and status codes."
+  },
+  {
+    "ruleName": "validatePluralResourceInUritemplate",
+    "functionName": "validatePluralisedResourceNamesInUri",
+    "target": "Resource_URI_Template",
+    "intent": "Use plural names in resources as a best practice."
+  },
+  {
+    "ruleName": "validateDashDelimitedLowercasedUris",
+    "functionName": "validateUriPartsDashSeparatedLowercase",
+    "target": "Resource_URI_Template",
+    "intent": "Check URIs are lower case with dashes for separate words as a best practice."
+  },
+  {
+    "ruleName": "validateCamelCaseInRequestBodies",
+    "functionName": "validateJsonCamelCaseKeys",
+    "target": "Request_Body",
+    "intent": "Use camelCase in request bodies for consistency."
+  },
+  {
+    "ruleName": "validateCamelCaseInResponseBodies",
+    "functionName": "validateJsonCamelCaseKeys",
+    "target": "Response_Body",
+    "intent": "Use camelCase in response bodies for consistency."
+  },
+  {
+    "enabled": false,
+    "ruleName": "validateUUIDFormatOfAtKeysInRequestBodies",
+    "functionName": "validateUUIDInJsonIdKeys",
+    "target": "Request_Body",
+    "intent": "Use real UUIDs in request bodies as samples for clarity."
+  },
+  {
+    "enabled": false,
+    "ruleName": "validateUUIDFormatOfAtKeysInResponseBodies",
+    "functionName": "validateUUIDInJsonIdKeys",
+    "target": "Response_Body",
+    "intent": "Use real UUIDs in response bodies as samples for clarity."
+  },
+  {
+    "ruleName": "validateDateTimeFormatAtKeysInRequestBodies",
+    "functionName": "validateDatetimeFormatInJsonAtKeys",
+    "target": "Request_Body",
+    "intent": "Use real date/times in request bodies as samples for clarity."
+  },
+  {
+    "ruleName": "validateDateTimeFormatAtKeysInResponseBodies",
+    "functionName": "validateDatetimeFormatInJsonAtKeys",
+    "target": "Response_Body",
+    "intent": "Use real date/times in response bodies as samples for clarity."
+  }
+]
